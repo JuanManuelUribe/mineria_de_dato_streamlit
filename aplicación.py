@@ -37,8 +37,8 @@ def main():
       st.markdown("Imagen clasificada")
       model = load_model()
 
-prediction = model.predict(preprocessed_image.reshape(1,-1)) # (1, 784)
-st.markdown(f"La imagen fue clasificada como: {prediction}")
+      prediction = model.predict(preprocessed_image.reshape(1,-1)) # (1, 784)
+      st.markdown(f"La imagen fue clasificada como: {prediction}")
 
 if __name__=='__main__':
   main()
